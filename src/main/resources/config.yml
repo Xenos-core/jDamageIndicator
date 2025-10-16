@@ -1,0 +1,49 @@
+# jDamageIndicator Configuration
+# Author: Macronis
+
+damage-indicator:
+  # Enable or disable the damage indicator system
+  enabled: true
+  
+  # Display settings for different entity types
+  show-on-players: true
+  show-on-mobs: true
+  
+  # Display formatting
+  color: '&c'  # Default damage color (red)
+  critical-threshold: 6.0  # Minimum damage for critical hit display
+  critical-color: '&4'  # Critical hit color (dark red)
+  
+  # Healing settings
+  show-healing: true
+  healing-color: '&a'  # Healing color (green)
+  
+  # Display duration and positioning
+  display-duration-ticks: 30  # How long indicators stay visible (20 ticks = 1 second)
+  y-offset: 0.5  # Vertical offset from entity
+  
+  # Text formatting
+  format: '-{amount} ❤'  # Regular damage format
+  healing-format: '+{amount} ❤'  # Healing format
+  decimal-places: 1  # Number of decimal places for damage/healing numbers
+  
+  # Sound effects
+  sound-effects:
+    enabled: true
+    damage-sound: 'ENTITY_PLAYER_HURT'
+    critical-sound: 'ENTITY_PLAYER_ATTACK_CRIT'
+    healing-sound: 'ENTITY_PLAYER_LEVELUP'
+    volume: 0.5
+    pitch: 1.0
+
+# Performance settings
+performance:
+  max-indicators: 50  # Maximum number of indicators shown at once
+  update-interval: 2  # Ticks between indicator updates
+  invisible-spawn-delay: true  # Delay indicator visibility for smoother appearance
+
+# Debug settings
+debug:
+  enabled: false  # Enable debug mode
+  log-damage-events: false  # Log detailed damage event information
+  log-healing-events: false  # Log detailed healing event information

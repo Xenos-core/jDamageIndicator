@@ -1,0 +1,25 @@
+name: jDamageIndicator
+version: 1.0.0
+main: org.xenos.JDamageIndicator
+api-version: '1.21'
+author: Macronis
+website: https://github.com/Xenos-core
+
+commands:
+  xdi:
+    description: Main command for jDamageIndicator
+    usage: |
+      /<command> - Show plugin info
+      /<command> reload - Reload configuration
+      /<command> info - Show plugin information
+      /<command> status - Show plugin status
+    aliases: [jdamage, jdi]
+    permission: xdi.admin
+
+permissions:
+  xdi.admin:
+    description: Allows access to all jDamageIndicator commands
+    default: op
+  xdi.reload:
+    description: Allows reloading the plugin configuration
+    default: op
