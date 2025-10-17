@@ -1,6 +1,6 @@
 # jDamageIndicator
 
-A lightweight yet powerful Minecraft Bukkit plugin that brings combat to life with customizable floating damage indicators, critical hit markers, and healing popups — all while being performance-conscious and easy to configure. Compatible with Minecraft versions 1.21 up to 1.21.10.
+A lightweight yet powerful Minecraft Bukkit plugin that brings combat to life with customizable floating damage indicators, critical hit markers, and healing popups — all while being performance-conscious and easy to configure. Compatible with Minecraft versions 1.21 up to 1.21.10..
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Project Type: Personal](https://img.shields.io/badge/Project%20Type-Personal-blue.svg)]()
