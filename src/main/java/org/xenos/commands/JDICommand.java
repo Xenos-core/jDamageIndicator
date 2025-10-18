@@ -56,16 +56,16 @@ implements CommandExecutor {
     }
 
     private void handleInfo(CommandSender sender) {
-        send(sender, ChatColor.GOLD, "========== jDamageIndicator Info ==========");
+        send(sender, ChatColor.GOLD, "╔═════════════════ᴊᴅᴀᴍᴀɢᴇɪɴᴅɪᴄᴀᴛᴏʀ ɪɴꜰᴏ═════════════════════╗");
         sendKeyValue(sender, "Version", this.plugin.getDescription().getVersion());
         sendKeyValue(sender, "Author", "Macronis");
         sendKeyValue(sender, "Website", this.plugin.getDescription().getWebsite());
         sendKeyValue(sender, "Description", this.plugin.getDescription().getDescription());
-        send(sender, ChatColor.GOLD, "=========================================");
+        send(sender, ChatColor.GOLD, "╚═══════════════════════════════════════════════════════════╝");
     }
 
     private void handleStatus(CommandSender sender) {
-        send(sender, ChatColor.GOLD, "========== jDamageIndicator Status ==========");
+        send(sender, ChatColor.RED, "╔═════════════════ᴊᴅᴀᴍᴀɢᴇɪɴᴅɪᴄᴀᴛᴏʀ ѕᴛᴀᴛᴜѕ════════════════════╗");
         boolean enabled = this.plugin.getConfigManager().isDamageIndicatorEnabled();
         send(sender, ChatColor.YELLOW, "Damage Indicators: " + (enabled ? ChatColor.GREEN + "ENABLED" : ChatColor.RED + "DISABLED"));
         if (enabled) {
@@ -75,16 +75,16 @@ implements CommandExecutor {
             sendKeyValue(sender, "Critical Threshold", String.valueOf(this.plugin.getConfigManager().getCriticalThreshold()));
             sendKeyValue(sender, "Display Duration", this.plugin.getConfigManager().getDisplayDurationTicks() + " ticks");
         }
-        send(sender, ChatColor.GOLD, "==========================================");
+        send(sender, ChatColor.RED, "╚════════════════════════════════════════════════════════════╝");
     }
 
     private void sendHelp(CommandSender sender) {
-        send(sender, ChatColor.GOLD, "========== jDamageIndicator Commands ==========");
+        send(sender, ChatColor.GOLD, "╔═════════════════ᴊᴅᴀᴍᴀɢᴇɪɴᴅɪᴄᴀᴛᴏʀ ᴄᴏᴍᴍᴀɴᴅѕ═════════════════╗");
         sendCommand(sender, "/xdi help", "Show this help message");
         sendCommand(sender, "/xdi reload", "Reload plugin configuration");
         sendCommand(sender, "/xdi info", "Show plugin information");
         sendCommand(sender, "/xdi status", "Show plugin status");
-        send(sender, ChatColor.GOLD, "============================================");
+        send(sender, ChatColor.GOLD, "╚═══════════════════════════════════════════════════════════╝");
     }
 
     private void send(CommandSender sender, ChatColor color, String message) {
